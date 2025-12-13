@@ -1,0 +1,93 @@
+/* Smooth transitions for interactive elements */
+a, .btn, .nav-link, .journal-card, .quote-card, .insta-grid img, .about-img {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease, background-color 0.22s ease;
+}
+
+/* Navbar link hover */
+.navbar .nav-link:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* Make nav links feel clickable on small screens too */
+.navbar .nav-link { cursor: pointer; }
+
+/* About image subtle lift */
+.about-img:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 22px rgba(13, 110, 253, 0.08);
+}
+
+/* Quote card hover */
+.quote-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(33, 37, 41, 0.06);
+  border-color: rgba(13,110,253,0.12);
+}
+
+/* Journal card hover */
+.journal-card {
+  cursor: pointer;
+}
+.journal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(33, 37, 41, 0.06);
+}
+
+/* Journal image slight zoom */
+.journal-card img:hover {
+  transform: scale(1.03);
+}
+
+/* Instagram grid hover */
+.insta-grid img {
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+.insta-grid img:hover {
+  transform: scale(1.06);
+  opacity: 0.95;
+  box-shadow: 0 10px 24px rgba(33,37,41,0.06);
+}
+
+/* CTA button hover enhancement */
+.cta-card .btn-outline-light {
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+.cta-card .btn-outline-light:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(13,110,253,0.12);
+}
+
+/* FOOTER */
+footer a:hover { color: #fff; padding-left: 6px; transition: .18s; }
+footer img:hover { transform: scale(1.04); }
+
+/* Disable transforms on very small screens to avoid layout issues */
+@media (max-width: 575.98px) {
+  .footer a:hover,
+  .footer .bi:hover,
+  .footer .social-icon:hover,
+  .footer .btn:hover,
+  .footer h6:hover,
+  .footer li a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Small-screen adjustments to avoid overflow on hover transforms */
+@media (max-width: 575.98px) {
+  .about-img:hover,
+  .journal-card:hover,
+  .quote-card:hover,
+  .insta-grid img:hover,
+  .cta-card .btn-outline-light:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

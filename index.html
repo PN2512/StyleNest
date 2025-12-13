@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Index Page </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="icon" type="image/png" href="./images/logo/pn.logo.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+
+  <!-- Header -->
+  <header class="site-header border-bottom">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between py-3">
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#"><img src="images/logo/pn.logo.png" alt="logo" class="img-fluid" style="max-height:56px;"></a>
+        </div>
+
+        <!-- Desktop navbar -->
+        <nav class="d-none d-md-block">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link px-3 active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="d-md-none mobile-nav">
+          <input id="menu-toggle" type="checkbox" />
+          <label for="menu-toggle" class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <div class="mobile-menu">
+            <ul class="list-unstyled m-0">
+              <li><a href="index.html" class="d-block py-2">Home</a></li>
+              <li><a href="about.html" class="d-block py-2">About</a></li>
+              <li><a href="shop.html" class="d-block py-2">Shop</a></li>
+              <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- BOOTSTRAP CAROUSEL -->
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="C:\Users\pravi\OneDrive\Desktop\UI\bootstrap project\banner\collection-item1.jpg" class="d-block w-100" alt="Banner 1">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold">Summer Collection</h1>
+          <p>Trendy outfits to refresh your wardrobe.</p>
+          <a href="shop.html" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="C:\Users\pravi\OneDrive\Desktop\UI\bootstrap project\banner\collection-item2.jpg" class="d-block w-100" alt="Banner 2">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold">New Arrivals</h1>
+          <p>Fresh fashion styles for everyone.</p>
+          <a href="shop.html" class="btn btn-light btn-lg">Explore</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="C:\Users\pravi\OneDrive\Desktop\UI\bootstrap project\banner\collection-item3.jpg" class="d-block w-100" alt="Banner 3">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold">Exclusive Deals</h1>
+          <p>Big discounts on our best products.</p>
+          <a href="shop.html" class="btn btn-light btn-lg">Grab Offer</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Featured products (static grid) -->
+  <section id="featured-products" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="h4 mb-0">Featured Products</h2>
+        <a href="shop.html" class="small">View all products <i class="fa-solid fa-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/product/product-item1.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title mb-1">Full sleeve cover shirt</h6>
+              <div class="text-primary">$40.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/product/product-item2.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title mb-1">Volunteer Half blue</h6>
+              <div class="text-primary">$38.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/product/product-item3.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title mb-1">Double yellow shirt</h6>
+              <div class="text-primary">$44.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/product/product-item4.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title mb-1">Long belly grey pant</h6>
+              <div class="text-primary">$33.00</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest collection -->
+  <section class="latest-collection py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- LEFT BIG CARD -->
+      <div class="col-lg-7">
+        <div class="collection-card big-card">
+          <img src="images/collection/collection-item_big.jpg" alt="Street Wear">
+
+          <div class="collection-content">
+            <span class="tag">CASUAL COLLECTION</span>
+            <h1>Street<br>Wear.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Dignissim massa diam elementum.
+            </p>
+            <a href="shop.html" class="shop-link">Shop Collection →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-5">
+        <div class="row g-4">
+
+          <!-- TOP RIGHT CARD -->
+          <div class="col-12">
+            <div class="collection-card small-card">
+              <img src="images/collection/collection-item1.jpg" alt="Shoes">
+
+              <div class="collection-content">
+                <span class="tag">BASIC COLLECTION</span>
+                <h2>Basic<br>Shoes.</h2>
+                <a href="shop.html" class="shop-link">Shop Collection →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM RIGHT CARD -->
+          <div class="col-12">
+            <div class="collection-card small-card">
+              <img src="images/collection/collection-item2.jpg" alt="Woolen Hat">
+
+              <div class="collection-content">
+                <span class="tag">BEST SELLING PRODUCT</span>
+                <h2>Woolen<br>Hat.</h2>
+                <a href="shop.html" class="shop-link">Shop Collection →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Subscribe -->
+  <section id="subscribe" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="h4">Get 25% off Discount Coupons</h2>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas.</p>
+        </div>
+        <div class="col-md-6">
+          <form class="d-flex mt-3 mt-md-0" onsubmit="return false;">
+            <input type="email" class="form-control me-2" placeholder="Enter your email addresss here">
+            <button class="btn btn-dark">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best selling products (static grid) -->
+  <section id="selling-products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h4 mb-4">Best selling products</h2>
+      <div class="row g-4">
+        <!-- four sample cards -->
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/selling/selling-products1.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title">Half sleeve T-shirt</h6>
+              <div class="text-primary">$40.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- duplicate others as needed -->
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/selling/selling-products2.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title">Stylish Grey T-shirt</h6>
+              <div class="text-primary">$35.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/selling/selling-products3.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title">Silk White Shirt</h6>
+              <div class="text-primary">$35.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card product-card h-100">
+            <img src="images/selling/selling-products4.jpg" class="card-img-top" alt="">
+            <button class="hover-btn">Shop Now</button>
+            <div class="card-body">
+              <h6 class="card-title">Grunge Hoodie</h6>
+              <div class="text-primary">$30.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <i class="fa-solid fa-quote-right fa-2x text-muted"></i>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="testimonial p-4 rounded bg-white shadow-sm section-hover">
+            <p class="mb-2">"Absolutely loved the collection. Great fabrics and fast delivery."</p>
+            <div class="text-muted small">— Alex Johnson</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="images/logo/pn.logo.png" alt="logo" style="max-height:48px;" class="bg-light rounded-pill p-2">
+          <p class="mt-3 small"></p>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6 class="mb-3">Shop</h6>
+          <ul class="list-unstyled small">
+            <li><a href="shop.html" class="text-light ">All products</a></li>
+            <li><a href="shop.html" class="text-light ">New arrivals</a></li>
+            <li><a href="shop.html" class="text-light ">Best sellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6 class="mb-3">Company</h6>
+          <ul class="list-unstyled small">
+            <li><a href="about.html" class="text-light">About</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+            <li><a href="shop.html" class="text-light">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4 ">
+          <h6 class="mb-3 text-light">Contact</h6>
+          <p class="small mb-1 text-light">Let's talk! <strong>+91-13134643164</strong></p>
+          <p class="small text-light">Free shipping on purchases over $200</p>
+        </div>
+      </div>
+
+      <div class="text-center small pt-3 border-top border-secondary mt-3">
+        © <span id="year">2025</span> cloths.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (for carousel) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

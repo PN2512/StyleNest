@@ -1,0 +1,71 @@
+/* ===========================
+   Contact Page Styles
+   =========================== */
+
+/* Hero */
+#hero {
+  border-bottom: 1px solid #e9ecef;
+}
+a{
+  text-decoration: none;
+}
+#hero h1 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+#hero p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* Contact Form */
+form .form-control {
+  border-radius: 6px;
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13,110,253,.25);
+}
+form .form-control:hover {
+  border-color: #0d6efd;
+}
+form .btn-primary {
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form .btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* Contact Info */
+.contact-info li {
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.contact-info li:hover {
+  transform: translateX(5px);
+  color: #0d6efd;
+}
+
+/* Map */
+.ratio iframe {
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.ratio iframe:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer a:hover { color: #fff; padding-left: 6px; transition: .18s; }
+footer img:hover { transform: scale(1.04); }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  #hero .display-6 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,48 @@
+/* Basic custom styles for the shop template */
+
+/* Topbar */
+.topbar { font-size: 0.9rem; }
+
+/* Navbar brand */
+.navbar-brand { font-size: 1.25rem; letter-spacing: 0.5px; }
+
+/* Hero */
+#hero { border-bottom: 1px solid #e9ecef; }
+
+a{
+  text-decoration: none;
+}
+/* Product card */
+.product-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-card img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Price */
+.price { color: #111; }
+
+/* Journal images */
+#journal .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer a:hover { color: #fff; padding-left: 6px; transition: .18s; }
+footer img:hover { transform: scale(1.04); }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .product-card img { height: 160px; }
+  #hero .display-6 { font-size: 1.5rem; }
+}
